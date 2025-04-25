@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/myleb.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--  -->
+    <div class="min-wraper">
+        <!-- fiexed-top كلاس لتثبيت الهيدر -->
+        <nav class="fixed-top">
+            <header class="header d-flex justify-content-between py-1 ">
+                <div class="right-header  d-flex  align-items-center gap-3">
+                    <div class="logo  d-none d-md-block">
+                        <a href="index.html"> لوحة معلومات الإدارة</a>
+                    </div>
+                    <div class="px-3"> <a href="#"><i class=" fa-solid fa-chart-bar" id="sidebar-togle"></i></a></div>
+                    <form action="" class="  d-none d-md-block">
+                        <input type="text" class="form-control" placeholder="اكتب اسم الطالب للبحث ">
+                    </form>
+                </div>
+
+
+
+
+                <div class="left-header d-flex align-items-center gap-3 px-3">
+                    <div class="icons d-flex gap-3">
+                       
+                        <a href=""> <i class="fa-regular fa-calendar-days"></i>
+                        </a> <a class="comment position-relative" href=""> <i class=" fa-regular fa-comment"></i></a>
+
+
+                        <div class="messages-container position-relative" id="messages-container">
+                            <a href="#" class="position-relative envelope">
+                                <i class=" fa-regular fa-envelope"></i>
+                            </a>
+                            <ul class="messsages-area position-absolute text-center" id="messsages-area">
+                                <div class="message-header">
+                                    <h3>أحدث الرسائل </h3>
+                                </div>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student-4.jpg" alt="">
+                                            <h4> سلمى السعيد</h4>
+                                        </div>
+                                        <p>12:50 م</p>
+                                    </div>
+                                    <div>
+                                        <p class="p-messsage">السلام عليكم ورحمة...</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student1.jpg" alt="">
+                                            <h4> رامي حمشو</h4>
+                                        </div>
+                                        <p>11:34 ص</p>
+                                    </div>
+                                    <div>
+                                        <p class="p-messsage">اذا سمحت ممكن ...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student2.jpg" alt="">
+                                            <h4> علي العبد</h4>
+                                        </div>
+                                        <p>9:52 ص</p>
+                                    </div>
+                                    <div class="voies-message gap-2">
+                                        <i class="fa-solid fa-headphones "></i>
+                                        <p class="p-messsage ">مقطع صوتي</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/stundent-3.jpg" alt="">
+                                            <h4> شهد مرة</h4>
+                                            <p class=""></p>
+                                        </div>
+                                        <P>أمس</P>
+                                    </div>
+                                    <div class="voies-message gap-2">
+                                        <i class="fa-regular fa-image"></i>
+                                        <p class="p-messsage ">صورة</p>
+                                    </div>
+                                </li>
+                                <a href=""> كافة الرسائل</a>
+                            </ul>
+                        </div>
+
+
+
+                        <a href="#" class="position-relative bell">
+                            <i class=" fa-regular fa-bell"></i>
+                        </a>
+
+
+
+
+
+                    </div>
+
+                    <div class="avatar">
+                        <img src="assets/imgs/avatar.jpg " alt="avatar">
+                    </div>
+
+                    <a data-bs-toggle="offcanvas" href="#usres-online"> <i
+                            class=" fa-solid fa-bars-staggered active-users"></i></a>
+                </div>
+            </header>
+        </nav>
+        <!-- end header -->
+        <!-- start sidebar القسم اليميني  الاسودالطويل  -->
+        <div class="sidebar" id="sidebar">
+            <div class="profile">
+                <img src="assets/imgs/avatar.jpg" alt="profile">
+                <h3>مايا بيطار </h3>
+            </div>
+            <ul class="ul-sidebar">
+                <li class="mb-2 active">
+                    <i class="fa-solid fa-house-user fs-5 "></i>
+                    <a href="index.html" class="m-r-10"> الصفحة الرئسية</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-circle-user fs-5 "></i>
+                    <a href="profile.html" class="m-r-10"> الحساب</a>
+
+                </li>
+                <li class="mb-2">
+                  
+                    <i class="fa-solid fa-chalkboard  fs-5 "></i>
+                    <a href="" class="m-r-10"> الإدارة</a>
+
+                </li>
+             
+                <li class="mb-2">
+                    
+                    <i class="fa-solid fa-users fs-5 "></i>
+                    <a href="teachers.html" class="m-r-10"> المعلمون</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-user-graduate fs-5"></i>
+                   
+                    <a href="students.html" class="m-r-10"> الطلاب </a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-warehouse fs-5 "></i>
+                    <a href="" class="m-r-10"> المكتبة</a>
+
+                </li>
+             
+                <li class="mb-2">
+                    <i class="fa-solid fa-book-open-reader fs-5 "></i>
+                    <a href="" class="m-r-10"> المواد</a>
+
+                </li>
+                <li class="mb-2 actives">
+                    <i class="fa-solid fa-calendar"></i>
+                    <a href="blog.html" class="m-r-10"> أعمال الطلاب</a>
+
+                </li>
+               
+                <li class="mb-2">
+                    <i class="fa-solid fa-gear fs-5 "></i>
+                    <a href="" class="m-r-10"> الأعدادات</a>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- end sidebar -->
+
+        <!-- start content محتوى الصفحة الكبيرة  -->
+        <div class="content p-1" id="content">
+            <div class="inner-content p-3">
+                <div class="container-fluid">
+                    <h4>كافة الأعمال</h4>
+                 <a href="add-post.html">
+                    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#add-students">
+                        إضافة مشروع جديدة
+                      </button>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card p-3">
+
+
+
+                                <table id="example" class="table table-hover table-striped disple">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">عنوان المشروع</th>
+                                            <th scope="col">التصنيف</th>
+                                            <th scope="col">تاريخ النشر </th>
+                                            <th scope="col">الحالة</th>
+                                            <th scope="col">الاسم</th>
+                                            <th scope="col">العمليات</th>
+                                        </tr>
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">1</th>
+                                        
+                                        <td> تأثير الذكاء الاصطناعي</td>
+                                        <td>ذكاء اصططناعي</td>
+                                        <td>30/1/2025</td>
+                                       <td>
+                                                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                  </div>
+                                                فعال</td>
+                                        <td >
+                                            مها مرة
+                                      
+                                           
+                                        </td>
+                                        <td class="">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    العمليات
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal"> حذف المشروع</a></li>
+                                                    <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                    <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                
+                                                </ul>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        
+                                        <td>معالجة الصورة</td>
+                                        <td>للصور</td>
+                                        <td>2/2/2025</td>
+                                       <td>
+                                                <div style="width: 10px ; height: 10px;" class="spinner-grow text-danger" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                  </div>
+                                        معطل</td>
+                                        <td>
+                                           عمر السعيد
+                                        </td>
+                                        <td class="">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    العمليات
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                    <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                    <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                               
+                                                </ul>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        
+                                        <td> خوارزمية RSA</td>
+                                        <td>أمن سيبراني</td>
+                                        <td>4/1/2025</td>
+                                       <td>
+                                                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                  </div>
+                                        فعال</td>
+                                        <td>
+                                          الاء الحلو
+                                        </td>
+                                        <td class="">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    العمليات
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                    <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                    <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                      
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        
+                                        <td> تشفير البيانات</td>
+                                        <td>أمن سيبراني</td>
+                                        <td>2/12/2024</td>
+                                       <td>
+                                                <div style="width: 10px ; height: 10px;" class="spinner-grow text-danger" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                  </div>
+                                        معطل</td>
+                                        <td>
+                                          شمس الاسعد
+                                        </td>
+                                        <td class="">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    العمليات
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                    <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                    <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        
+                                        <td> لغة php</td>
+                                        <td>مواقع ويب</td>
+                                        <td>6/9/2024</td>
+                                       <td>
+                                                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                  </div>
+                                        مفعل</td>
+                                        <td>
+                                يحيلى مرة
+                                        </td>
+                                        <td class="">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    العمليات
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                    <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                    <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                
+                                                <td>اتصال الانترنت أمن </td>
+                                                <td>شبكات</td>
+                                                <td>9/10/2024</td>
+                                               <td>
+                                                        <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                          </div>
+                                                معطل</td>
+                                                <td>
+                                                  شمس الاسعد
+                                                </td>
+                                                <td class="">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            العمليات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                            <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                            <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+        
+                                                </td>
+                                            </tr>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        
+                                        <td> لغة php</td>
+                                        <td>مواقع ويب</td>
+                                        <td>6/9/2024</td>
+                                       <td>
+                                                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                  </div>
+                                        مفعل</td>
+                                        <td>
+                                          أحمد حميدو
+                                        </td>
+                                        <td class="">
+                                            <div class="dropdown">
+                                                <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    العمليات
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                    <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                    <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                
+                                                <td>خوارزميات التشفير</td>
+                                                <td>خوارزميات</td>
+                                                <td>9/1/2024</td>
+                                               <td>
+                                                        <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                          </div>
+                                                مفعل</td>
+                                                <td>
+                                                  شمس الاسعد
+                                                </td>
+                                                <td class="">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            العمليات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                            <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                            <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                
+                                                <td>خوارزميات  فك التشفير </td>
+                                                <td>خوارزميات</td>
+                                                <td>9/1/2024</td>
+                                               <td>
+                                                        <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                          </div>
+                                                مفعل</td>
+                                                <td>
+                                                  فهد محمد
+                                                </td>
+                                                <td class="">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            العمليات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                            <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                            <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                
+                                                <td>روبوت كاكا</td>
+                                                <td>روبوتية</td>
+                                                <td>9/1/2024</td>
+                                               <td>
+                                                        <div style="width: 10px ; height: 10px;" class="spinner-grow text-success" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                          </div>
+                                                مفعل</td>
+                                                <td>
+                                                  مها بيطار
+                                                </td>
+                                                <td class="">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-warning btn-sm dropdown-toggle" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            العمليات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#delet-blog"  data-bs-toggle="modal">حذف المشروع</a></li>
+                                                            <li><a class="dropdown-item" href="#edit-students" data-bs-toggle="modal" >تعديل البيانات</a></li>
+                                                            <li><a class="dropdown-item" href="#">عرض المشروع</a></li>
+                                                            
+                                                        </ul>
+                                                    </div>
+        
+                                                </td>
+                                            </tr>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- end content -->
+    </div>
+
+
+
+
+
+
+  
+
+  <!-- start offcanves -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="usres-online" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">المستخدمين المتصلين</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body ">
+        <div class="alert alert-success"> 
+            كافة المستخدمين النشطين
+        </div>
+        <div class="items-side-menu d-flex justify-content-between align-items-center mb-3" >
+            <div class="avatar-info d-flex align-items-center position-relative">
+                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                <h4>سارة الاحمد</h4>
+            </div>
+
+
+            <div class="contact-info">
+                <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+            </div>
+        </div>
+        <div class="items-side-menu d-flex justify-content-between align-items-center mb-3" >
+            <div class="avatar-info d-flex align-items-center position-relative">
+                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                <h4>اريج عبدلله</h4>
+            </div>
+
+
+            <div class="contact-info">
+                <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+            </div>
+        </div>
+        <div class="items-side-menu d-flex justify-content-between align-items-center mb-3" >
+            <div class="avatar-info d-flex align-items-center position-relative">
+                <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                <h4>يامن العلي </h4>
+            </div>
+
+
+            <div class="contact-info">
+                <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+<!-- end offcanves -->
+
+
+
+
+        <!--  start modal عند النقر ع حذف -->
+
+        <div class="modal fade" id="delet-blog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">حذف المشروع </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                   <form action="">
+                    <div class="alert alert-danger">  هل انت متأكد من عملية الحذف ؟</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">أغلاق</button>
+                        <button type="button" class="btn btn-primary">حذف</button>
+                      </div>
+                   </form>
+                </div>
+             
+              </div>
+            </div>
+        
+            <!-- end modal -->
+
+    <!-- هذا لملف الجدول الي نزلته من النت من أجل الجدول  -->
+    <script src="assets/js/datatables.js"></script>
+    <!-- هذه مكتبة من اجل المخططات -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <!-- ---------- -->
+    <script src="assets/js/bootstrao.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

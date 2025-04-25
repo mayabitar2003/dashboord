@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/myleb.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--  -->
+    <div class="min-wraper">
+        <!-- fiexed-top كلاس لتثبيت الهيدر -->
+        <nav class="fixed-top">
+            <header class="header d-flex justify-content-between py-1 ">
+                <div class="right-header  d-flex  align-items-center gap-3">
+                    <div class="logo  d-none d-md-block">
+                        <a href="index.html"> لوحة معلومات الإدارة</a>
+                    </div>
+                    <div class="px-3"> <a href="#"><i class=" fa-solid fa-chart-bar" id="sidebar-togle"></i></a></div>
+                    <form action="" class="  d-none d-md-block">
+                        <input type="text" class="form-control" placeholder="اكتب اسم الطالب للبحث ">
+                    </form>
+                </div>
+
+
+
+
+                <div class="left-header d-flex align-items-center gap-3 px-3">
+                    <div class="icons d-flex gap-3">
+                        <a href=""> <i class="fa-regular fa-calendar-days"></i>
+                        </a>
+                        <a href="" class="position-relative comment"> <i class=" fa-regular fa-comment"></i></a>
+
+
+
+                        <div class="messages-container position-relative" id="messages-container">
+                            <a href="#" class="position-relative envelope">
+                                <i class=" fa-regular fa-envelope"></i>
+                            </a>
+                            <ul class="messsages-area position-absolute text-center" id="messsages-area">
+                                <div class="message-header">
+                                    <h3>أحدث الرسائل </h3>
+                                </div>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student-4.jpg" alt="">
+                                            <h4> سلمى السعيد</h4>
+                                        </div>
+                                        <p>12:50 م</p>
+                                    </div>
+                                    <div>
+                                        <p class="p-messsage">السلام عليكم ورحمة...</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student1.jpg" alt="">
+                                            <h4> رامي حمشو</h4>
+                                        </div>
+                                        <p>11:34 ص</p>
+                                    </div>
+                                    <div>
+                                        <p class="p-messsage">اذا سمحت ممكن ...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student2.jpg" alt="">
+                                            <h4> علي العبد</h4>
+                                        </div>
+                                        <p>9:52 ص</p>
+                                    </div>
+                                    <div class="voies-message gap-2">
+                                        <i class="fa-solid fa-headphones "></i>
+                                        <p class="p-messsage ">مقطع صوتي</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/stundent-3.jpg" alt="">
+                                            <h4> شهد مرة</h4>
+                                            <p class=""></p>
+                                        </div>
+                                        <P>أمس</P>
+                                    </div>
+                                    <div class="voies-message gap-2">
+                                        <i class="fa-regular fa-image"></i>
+                                        <p class="p-messsage ">صورة</p>
+                                    </div>
+                                </li>
+                                <a href=""> كافة الرسائل</a>
+                            </ul>
+                        </div>
+
+
+
+                        <a href="#" class="position-relative bell">
+                            <i class=" fa-regular fa-bell"></i>
+                        </a>
+
+
+
+
+
+                    </div>
+
+                    <div class="avatar">
+                        <img src="assets/imgs/avatar.jpg " alt="avatar">
+                    </div>
+
+                    <a data-bs-toggle="offcanvas" href="#usres-online"> <i
+                            class=" fa-solid fa-bars-staggered active-users"></i></a>
+                </div>
+            </header>
+        </nav>
+        <!-- end header -->
+        <!-- start sidebar القسم اليميني  الاسودالطويل  -->
+        <div class="sidebar" id="sidebar">
+            <div class="profile">
+                <img src="assets/imgs/avatar.jpg" alt="profile">
+                <h3>مايا بيطار </h3>
+            </div>
+            <ul class="ul-sidebar">
+                <li class="mb-2 active">
+                    <i class="fa-solid fa-house-user fs-5 "></i>
+                    <a href="index.html" class="m-r-10"> الصفحة الرئسية</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-circle-user fs-5 "></i>
+                    <a href="profile.html" class="m-r-10"> الحساب</a>
+
+                </li>
+                <li class="mb-2">
+                  
+                    <i class="fa-solid fa-chalkboard  fs-5 "></i>
+                    <a href="" class="m-r-10"> الإدارة</a>
+
+                </li>
+             
+                <li class="mb-2 actives">
+                    
+                    <i class="fa-solid fa-users fs-5 "></i>
+                    <a href="teachers.html" class="m-r-10"> المعلمون</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-user-graduate fs-5"></i>
+                   
+                    <a href="students.html" class="m-r-10"> الطلاب </a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-warehouse fs-5 "></i>
+                    <a href="" class="m-r-10"> المكتبة</a>
+
+                </li>
+             
+                <li class="mb-2">
+                    <i class="fa-solid fa-book-open-reader fs-5 "></i>
+                    <a href="" class="m-r-10"> المواد</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <a href="blog.html" class="m-r-10"> أعمال الطلاب</a>
+
+                </li>
+               
+                <li class="mb-2">
+                    <i class="fa-solid fa-gear fs-5 "></i>
+                    <a href="" class="m-r-10"> الأعدادات</a>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- end sidebar -->
+
+        <!-- start content محتوى الصفحة الكبيرة  -->
+        <div class="content p-1" id="content">
+            <div class="inner-content p-3">
+                <div class="container-fluid">
+                    <h4>كادرنا المميز </h4>
+                    <div class="row">
+                        <div class="col ">
+                               
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    
+                                 
+                                </span>
+                                <input type="text" class="form-control" id="inputGroup-sizing-default" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="البحث عن معلم/ة">
+                              </div>
+                         
+                          </div>
+                   
+
+
+                      </div>
+                      <div class="">
+                        <button type="button" class="mb-3 btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#add-students">
+                            إضافة معلم/ة
+                          </button>
+                        </div>
+                      <div class="row">
+                                          
+                        <div class="col">
+                           
+                    <div class="row flex-wrap flex-md-nowrap">
+
+
+                        <div class="col-md-3 flex-shrink-1 mb-2 ">
+                            <div class="card add-card ">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-2.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">أحمد الابراهيم</h4>
+                                    <p class="mb-2 mx-2"> أنا أستاذ تحليل خريج جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3 mb-0">
+                                    <div>
+
+                                        مشروعاً
+                                       
+                                        <p >130</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>77</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>80%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>270 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3  flex-shrink-1 mb-2">
+                            <div class="card  add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech5.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">صبا شمعات</h4>
+                                    <p class="mb-2"> أنا أنسة خوارزميات خريجة جامعة التكلونوجيا والمعلوماتية </p>
+                                    <p class="fs-5 text-black text-center">الأعمال:</p>
+
+                                    <div class="d-flex justify-content-between mx-2 mt-3 ">
+                                        <div>
+
+                                            مشروعاً
+                                            <p>190</p>
+                                        </div>
+                                        <div>
+
+                                            مهمة
+                                            <p>97</p>
+                                        </div>
+                                        <div>
+
+                                            تم
+                                            <p>89%</p>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-tech">
+                                    <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                        <p>تقييم الاعضاء</p>
+                                        <p>310 نقطة</p>
+                                    </div>
+
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3  flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-4.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">زياد كلش</h4>
+                                    <p class="mb-2 mx-2"> أنا أستاذ خوارزميات خريج جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>100</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>75</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>82%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>210 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech1.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">أية مرة</h4>
+                                    <p class="mb-2 mx-2"> أنا أنسة بنية حاسب خريجة جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>200</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>175</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>90%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>390 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 94%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row flex-wrap flex-md-nowrap mt-0 mt-md-3">
+
+
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech2.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">أسيل بركات</h4>
+                                    <p class="mb-2 mx-2"> أنا أنسة تحليل معطيات خريجة جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>130</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>77</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>87%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>300 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech4.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">ربى السعد</h4>
+                                    <p class="mb-2"> أنا أنسة رؤية حاسب خريجة جامعة التكلونوجيا والمعلوماتية </p>
+                                    <p class="fs-5 text-black text-center">الأعمال:</p>
+
+                                    <div class="d-flex justify-content-between mx-2 mt-3 ">
+                                        <div>
+
+                                            مشروعاً
+                                            <p>320</p>
+                                        </div>
+                                        <div>
+
+                                            مهمة
+                                            <p>120</p>
+                                        </div>
+                                        <div>
+
+                                            تم
+                                            <p>89%</p>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-tech">
+                                    <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                        <p>تقييم الاعضاء</p>
+                                        <p>310 نقطة</p>
+                                    </div>
+
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-1.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">عزيز المصطفى</h4>
+                                    <p class="mb-2 mx-2"> أنا أستاذ تنقيب معطياة خريج جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>100</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>75</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>82%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>210 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-3.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">أيهم الجرك</h4>
+                                    <p class="mb-2 mx-2"> أنا أستاذ فيزياء حديثة خريجة جامعة العلوم </p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>200</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>175</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>90%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>390 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 94%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row flex-wrap flex-md-nowrap mt-0 mt-md-3">
+
+
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-4.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">فاضل كلي</h4>
+                                    <p class="mb-2 mx-2"> أنا أستاذ قواعد معطياة خريج جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>130</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>77</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>80%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>270 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-2.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">محمد الفهد</h4>
+                                    <p class="mb-2"> أنا استاذ معالج مصغر خريج جامعة التكلونوجيا والمعلوماتية </p>
+                                    <p class="fs-5 text-black text-center">الأعمال:</p>
+
+                                    <div class="d-flex justify-content-between mx-2 mt-3 ">
+                                        <div>
+
+                                            مشروعاً
+                                            <p>190</p>
+                                        </div>
+                                        <div>
+
+                                            مهمة
+                                            <p>97</p>
+                                        </div>
+                                        <div>
+
+                                            تم
+                                            <p>89%</p>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-tech">
+                                    <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                        <p>تقييم الاعضاء</p>
+                                        <p>310 نقطة</p>
+                                    </div>
+
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech5.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">بيسان الهادي</h4>
+                                    <p class="mb-2 mx-2"> أنا أنسة خوارزميات خريجة جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>100</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>75</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>82%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>210 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 flex-shrink-1 mb-2">
+                            <div class="card add-card">
+                                <div class="techer-img">
+                                    <img src="assets/imgs/teacher/tech-3.jpg" class="table-img" width="50" alt="">
+                                </div>
+                                <div class="text-center div-techer">
+                                    <h4 class="mt-3 mb-3">يامن البطر</h4>
+                                    <p class="mb-2 mx-2"> أنا أستاذ هندسة برمجيات خريج جامعة اسطنبول</p>
+
+
+                                </div>
+                                <h4 class="fs-5 text-black text-center">الأعمال:</h4>
+                                <div class="d-flex justify-content-between mx-2 mt-3">
+                                    <div>
+
+                                        مشروعاً
+                                        <p>200</p>
+                                    </div>
+                                    <div>
+
+                                        مهمة
+                                        <p>175</p>
+                                    </div>
+                                    <div>
+
+                                        تم
+                                        <p>90%</p>
+                                    </div>
+                                </div>
+                                <hr class="hr-tech">
+                                <div class=" div-techer d-flex justify-content-between mx-2 mt-0">
+                                    <p>تقييم الاعضاء</p>
+                                    <p>390 نقطة</p>
+                                </div>
+                                <div class="progress m-2" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" style="height: 5px" aria-valuemax="25">
+                                    <div class="progress-bar" style="width: 94%"></div>
+                                </div>
+                                <div class="d-flex mx-3 justify-content-between mt-3 mb-2">
+                                    <i class="fa-brands fa-facebook f-icon fs-5"></i>
+                                    <i class="fa-brands fa-x-twitter x-icon fs-5"></i>
+                                    <i class="fa-brands fa-square-whatsapp w-icon fs-5"></i>
+                                   <i class="fa-brands fa-instagram i-icon fs-5"></i>
+                                </div>
+                             
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- end content -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+     <!-- start offcanves -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="usres-online" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">المستخدمين المتصلين</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="alert alert-success"> 
+                كافة المستخدمين النشطين
+            </div>
+            <div class="items-side-menu d-flex justify-content-between align-items-center mb-3" >
+                <div class="avatar-info d-flex align-items-center position-relative">
+                    <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                    <h4>سارة الاحمد</h4>
+                </div>
+
+
+                <div class="contact-info">
+                    <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                    <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+                </div>
+            </div>
+            <div class="items-side-menu d-flex justify-content-between align-items-center mb-3" >
+                <div class="avatar-info d-flex align-items-center position-relative">
+                    <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                    <h4>اريج عبدلله</h4>
+                </div>
+
+
+                <div class="contact-info">
+                    <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                    <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+                </div>
+            </div>
+            <div class="items-side-menu d-flex justify-content-between align-items-center mb-3" >
+                <div class="avatar-info d-flex align-items-center position-relative">
+                    <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                    <h4>يامن العلي </h4>
+                </div>
+
+
+                <div class="contact-info">
+                    <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                    <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end offcanves -->
+
+    <!--  start modal اضافة طالب -->
+
+  <div class="modal fade" id="add-students" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">إضافة معلم/ة جديد</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <form>
+                <div class="row ">
+                    <div class="col mb-3">
+                        <label  class="form-label">اسم المعلم/ة:</label>
+                        <input type="text" class="form-control" placeholder="الرجاء إدخال الاسم" >
+                     
+                      </div>
+                      <div class="col mb-3">
+                        <label  class="form-label">التخصص:</label>
+                        <input type="text" class="form-control" placeholder="الرجاء إدخال تخصصك" >
+                       
+                        </div>
+                  
+                </div>
+                <div class="row ">
+                    <div class="col mb-3">
+                        <label  class="form-label">رقم الهاتف:</label>
+                        <input type="text" class="form-control" placeholder="الرجاء إدخال رقم الهاتف" >
+                     
+                      </div>
+                      
+                        <div class="col mb-3">
+                            <label  class="form-label">البريد الالكتروني:</label>
+                            <input type="email" class="form-control"placeholder=" الرجاء إدخال البريد الالكتروني"  >
+                         
+                          </div>
+                </div>
+             <div>
+                <label  class="form-label">التفاصيل</label>
+                <textarea name="" id="" class="form-control" ></textarea>
+             </div>
+             <div class="mb-3">
+                <label for="formFile" class="form-label">تحميل صورة الطالب</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+                 </div>
+                   <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">أغلاق</button>
+          <button type="button" class="btn btn-primary">حفظ</button>
+        </div>
+              </form>
+        </div>
+     
+      </div>
+    </div>
+ 
+    <!-- end modal -->
+
+    <!--  start modal عند النقر ع تعديل يفتح مودال -->
+
+    <div class="modal fade" id="edit-students" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">تعديل بيانات الطالب </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                <form>
+                    <div class="row ">
+                        <div class="col mb-3">
+                            <label  class="form-label">اسم الطالب :</label>
+                            <input type="text" class="form-control" placeholder="الرجاء إدخال الاسم" value="سارة">
+                         
+                          </div>
+                          <div class="col mb-3">
+                              <label  class="form-label">ابريد الالكتروني:</label> 
+                              
+                              <input type="email" class="form-control"placeholder=" الرجاء إدخال البريد الالكتروني" value="sara@gamil.com" >
+                           
+                            </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col mb-3">
+                            <label  class="form-label">رقم الهاتف:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء إدخال رقم الهاتف" value="00678265" >
+                         
+                          </div>
+                          <div class="col mb-3">
+                            <label  class="form-label">رقم الطالب:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء إدخال رقمك" value="3246">
+                           
+                            </div>
+                    </div>
+                 <div>
+                    <label  class="form-label">التفاصيل</label>
+                    <textarea name="" id="" class="form-control" ></textarea>
+                 </div>
+                 <div class="mb-3">
+                    <label for="formFile" class="form-label">تحميل صورة الطالب</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                     </div>
+                       <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">أغلاق</button>
+              <button type="button" class="btn btn-primary">تعديل</button>
+            </div>
+                  </form>
+            </div>
+         
+          </div>
+        </div>
+    
+        <!-- end modal -->
+
+
+            <!--  start modal عند النقر ع حذف -->
+
+    <div class="modal fade" id="delet-students" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">حذف بيانات الطالب </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+               <form action="">
+                <div class="alert alert-danger">  هل انت متأكد من عملية الحذف ؟</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">أغلاق</button>
+                    <button type="button" class="btn btn-primary">حذف</button>
+                  </div>
+               </form>
+            </div>
+         
+          </div>
+        </div>
+    
+        <!-- end modal -->
+
+    <!-- هذا لملف الجدول الي نزلته من النت من أجل الجدول  -->
+    <script src="assets/js/datatables.js"></script>
+    <!-- هذه مكتبة من اجل المخططات -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <!-- ---------- -->
+    <script src="assets/js/bootstrao.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

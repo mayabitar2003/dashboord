@@ -1,0 +1,678 @@
+/* start header */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo+Play:wght@200..1000&display=swap');
+
+body {
+    font-family: cairo;
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* لصورة التحميل بالبداية */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* ------- */
+.header {
+    background-color: white;
+    box-shadow: 3px 3px 3px #cccccc5f;
+}
+
+.logo {
+    text-align: center;
+    width: 200px;
+    border-left: 1px solid #CCC;
+}
+
+.logo a {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.avatar img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1PX solid #CCC;
+}
+
+.icons i,
+.active-users,
+#sidebar-togle {
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+}
+
+/* هذه الافتر من أجل النقطة الحمراء التي بداخل الجرس */
+.bell::after {
+    position: absolute;
+    content: "5";
+    background-color: RED;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    top: -3px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment::after {
+ 
+        position: absolute;
+        content: "9";
+        background-color: green;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        color: white;
+        font-size: 10px;
+        top: -7px;
+        right: -8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+}
+.envelope::after {
+    position: absolute;
+    content: "4";
+    background-color: green;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    top: -5px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* رسائل الجرس */
+.message-bell{
+    cursor: pointer;
+}
+.ul-bell{
+    background-color: white;
+    width: 300px;
+    top: 38px;
+    left: -3px;
+    border-radius: 5px;
+    border-bottom: 1px solid #f4a529;
+    display: none;
+    border-radius: 5px;
+}
+.message-bell:hover {
+    display: block;
+}
+.ul-bell li{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;  
+}
+.ul-bell li:hover {
+    background-color: #eee;
+}
+/* خاص بالرسالة  */
+.messages-container{
+    cursor: pointer;
+}
+.messsages-area {
+    background-color: white;
+    width: 300px;
+    top: 38px;
+    left: -1px;
+    /* overflow: hidden; */
+    border-radius: 5px;
+    border-bottom: 1px solid #f4a529;
+    display: none;
+    border-radius: 5px;
+}
+
+.messsages-area li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.messsages-area li:hover {
+    background-color: #eee;
+}
+
+.message-header {
+    background-color:  #b5a1c0 ;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: relative;
+}
+/* عشان سهم الرسالة */
+.message-header::after {
+    position: absolute;
+    content: "";
+    top: -29px;
+    left: 0;
+  
+    border: 15px solid;
+    border-color: transparent transparent #b5a1c0  transparent;
+
+}
+
+.message-header h3 {
+    color: white;
+    font-size: 22px;
+
+}
+.item-menu-left img{
+width: 50px;
+border-radius: 40%;
+background-color: #ccc;
+
+}
+.items-side-menu{
+    border-bottom: 1px solid #655d84 !important;
+}
+.item-menu-left h4{
+    font-size: 18px;
+
+}
+.p-messsage{
+    font-size: 14px;
+    color: rgb(74, 72, 72);
+}
+.i-mesag{
+    font-size: 19px;
+    color: rgb(74, 72, 72);    
+}
+.voies-message{
+    display: flex;
+    justify-content: center;
+  text-align: center;
+
+}
+
+/* .... */
+/* end header */
+
+/* start sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #655d84;
+    height: 100vh;
+    position: fixed;
+    /*   overflow: hidden;
+    transition: 0.3s;
+    هدول خاصين عند النقر ع الايقونة منخفي اول شي كلشي زيادة
+    وتاني شي منشان السرعة  */
+    overflow: hidden;
+    transition: 0.3s;
+    /*     overflow-y: scroll;
+    أي يأظهر سكرول عامودي للتنقل بالقائمة  */
+border-left: 3px solid white;
+
+    top: 49px;
+    z-index: 900;
+}
+
+
+
+.profile {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile img {
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    padding: 2px;
+}
+
+.profile h3 {
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ul-sidebar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ul-sidebar li {
+    cursor: pointer;
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ul-sidebar li:hover {
+    cursor: pointer;
+    background-color: #b5a1c0 ;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ul-sidebar li a,
+.ul-sidebar li i {
+    color: white;
+}
+
+.actives {
+
+background-color:#b5a1c0 ;
+}
+
+/* end sidebar */
+.content {
+
+    /* height:calc(100vh-40px); */
+    margin-right: 200px;
+    height: 100vh;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+.img-tab{
+    border: 1PX solid #eee;
+    border-radius: 50%;
+}
+.bg-img{
+    border-radius: 15px;
+    height: 150px;
+    background-color: #655d84;
+    /* background-color: #a895f7; */
+
+}
+.card-mo{
+    height: 300px;
+}
+.stat-1 {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+.stat-color1{
+    border-right: 7px solid #ffcbf2;  
+}
+.stat-color2{
+    border-right: 7px solid #ffadad;  
+}
+.stat-color3{
+    border-right: 7px solid #f4a529;  
+}
+.stat-color4{
+    border-right: 7px solid  #f7a4b9;  
+}
+.stat-whit{
+    background-color: white;
+}
+.stat-green {
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+
+}
+
+.stat-red {
+
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.stat-blue {
+
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.stat-yellow {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+}
+
+.stat-1 h3 {
+    color: black;
+    font-family: Almarai !important;
+    font-size: 20px;
+    font-weight: 25px;
+}
+.mes{
+    border-radius: 10px;
+    background-color: pink;
+    width: 100%;
+    height: 20px;
+}
+.stat-1 h4 {
+    color: black;
+    font-size: 18px;
+    font-weight: 25px;
+}
+.stat-1 i{
+    color: #655d84;
+}
+.card1 img{
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+   text-align: center;
+   justify-content: center;
+
+}
+.card1:hover {
+    scale: 1.1;
+    overflow: hidden;
+}
+.h4-students{
+    padding: 10px;
+    font-size: 13px;
+    
+}
+.p-students{
+    font-size: 13px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* من أجل شاشات الهاتف بالبداية ما يكون ظاهر السلايدبار */
+@media(max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        right: -200px;
+    }
+
+    .content {
+        /*   margin-right: 0;
+        تعني عند بداية فتح الصفحة ياخد الكونتينت كل المساحة لان بدون هذه اغلتعليمة بالبدابة عم يكون اللون ابيض من البدي */
+        margin-right: 0;
+    }
+}
+
+/* للسكرولs */
+/* لعرض السكرول */
+#sidebar::-webkit-scrollbar {
+    /* يحول عرض السكرول الى 8  */
+    width: 8px;
+}
+
+/*  خلفية السكرول أو المسار الفارغ */
+#sidebar::-webkit-scrollbar-track {
+    background-color: #636161e6;
+    border-radius: 10px;
+}
+
+/*  تخصيص الجزء المتحرك  اي عندما هو ثابت لونه كذا*/
+#sidebar::-webkit-scrollbar-thumb {
+    background: rgb(128, 126, 126);
+    border-radius: 10px;
+}
+
+/* تخصيص عند النقر لتحريك السكرو ل يصبح لونه كذا */
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+
+}
+
+#chart1,
+#chart {
+    height: 370px;
+}
+
+/* offcanvas */
+.items-side-menu {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #00B2FF;
+}
+
+.avatar-info {
+    gap: 15px;
+}
+
+.avatar-info img {
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.avatar-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.contact-info i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.whatsapp-icons {
+    color: #43e97b;
+
+}
+
+.messenger-icons {
+    color: #00B2FF;
+}
+
+.grow-user {
+    position: absolute;
+    /* عشان النقطة الخضرا فوق الصورة  */
+    top: 0;
+}
+.table-img{
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+.h3-table{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* end offcanvas */
+
+
+
+
+
+/*  لصفحة الحساب*/
+/* ----- */
+.left-prof{
+    position: fixed;
+}
+.img-prof {
+display: flex;
+position: relative;
+}
+.img-prof img{
+    border-radius: 50%;
+    border: 1px solid #eee;
+    width: 70px;
+    margin: 20px;
+  
+  
+}
+.img-prof .i-camera{
+    position: absolute;
+    top: 75px;
+   right: 97px;
+    color:white;
+    font-size: 15px;
+    background-color: #005bea;
+    border-radius: 50%;
+    border: 5px solid #005bea;
+}  
+
+
+
+
+
+
+
+
+
+
+
+.m-flex-items{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.i-icon{
+    color: rgb(106, 99, 99);
+}
+.i-a{
+    color: rgb(61, 58, 58);  
+}
+.ul-prof li a{
+font-size: 15px;
+}
+
+.ul-prof {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ul-prof li {
+    cursor: pointer;
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ul-prof li:hover {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.active2{
+    background-color: rgb(211, 222, 246);
+
+}
+.active2 a{
+    color: rgb(30, 93, 240) !important;  
+}
+.active2 i{
+    color: rgb(30, 93, 240);
+}
+/* للمعلومون */
+.techer-img {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+position: relative;
+}
+.add-card::after{
+    content: "متابعة  ""   +";
+    position: absolute;
+    padding-right: 5px;
+    background-color: green;
+    width: 80px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    top: 4px;
+    left: 2px;
+
+}
+.table-imgg{
+    border-radius: 50%;
+    border: 1px solid #eee;
+  
+
+}
+.div-techer h4{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.div-techer p{
+  color: rgb(68, 67, 67);
+    font-size: 15px;
+
+}
+.hr-tech{
+    color: #b3b1b1;
+}
+.f-icon{
+    color: #005bea;
+   
+}
+.x-icon{
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+.w-icon{
+    color: #2af598;
+}
+.i-icon{
+    color: rgb(194, 66, 197);
+}
+.x-icon:hover {
+    scale: 1.1; 
+    cursor: pointer;  
+}
+.i-icon:hover {
+    scale: 1.1; 
+    cursor: pointer;  
+}
+.w-icon:hover {
+    scale: 1.1; 
+    cursor: pointer;  
+}
+.f-icon:hover {
+    scale: 1.1; 
+    cursor: pointer;  
+}

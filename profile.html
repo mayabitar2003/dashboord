@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/myleb.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--  -->
+    <div class="min-wraper">
+        <!-- fiexed-top كلاس لتثبيت الهيدر -->
+        <nav class="fixed-top">
+            <header class="header d-flex justify-content-between py-1 ">
+                <div class="right-header  d-flex  align-items-center gap-3">
+                    <div class="logo  d-none d-md-block">
+                        <a href="index.html"> لوحة معلومات الإدارة</a>
+                    </div>
+                    <div class="px-3"> <a href="#"><i class=" fa-solid fa-chart-bar" id="sidebar-togle"></i></a></div>
+                    <form action="" class="  d-none d-md-block">
+                        <input type="text" class="form-control" placeholder="اكتب اسم الطالب للبحث ">
+                    </form>
+                </div>
+
+
+
+
+                <div class="left-header d-flex align-items-center gap-3 px-3">
+                    <div class="icons d-flex gap-3">
+                        <a href=""> <i class="fa-regular fa-calendar-days"></i>
+                        </a>
+                        <a href="" class="position-relative comment"> <i class=" fa-regular fa-comment"></i></a>
+
+
+
+                       
+
+                        <div class="messages-container position-relative" id="messages-container">
+                            <a href="#" class="position-relative envelope">
+                                <i class=" fa-regular fa-envelope"></i>
+                            </a>
+                            <ul class="messsages-area position-absolute text-center" id="messsages-area">
+                                <div class="message-header">
+                                    <h3>أحدث الرسائل </h3>
+                                </div>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student-4.jpg" alt="">
+                                            <h4> سلمى السعيد</h4>
+                                        </div>
+                                        <p>12:50 م</p>
+                                    </div>
+                                    <div>
+                                        <p class="p-messsage">السلام عليكم ورحمة...</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student1.jpg" alt="">
+                                            <h4> رامي حمشو</h4>
+                                        </div>
+                                        <p>11:34 ص</p>
+                                    </div>
+                                    <div>
+                                        <p class="p-messsage">اذا سمحت ممكن ...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/student2.jpg" alt="">
+                                            <h4> علي العبد</h4>
+                                        </div>
+                                        <p>9:52 ص</p>
+                                    </div>
+                                    <div class="voies-message gap-2">
+                                        <i class="fa-solid fa-headphones "></i>
+                                        <p class="p-messsage ">مقطع صوتي</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/student/stundent-3.jpg" alt="">
+                                            <h4> شهد مرة</h4>
+                                            <p class=""></p>
+                                        </div>
+                                        <P>أمس</P>
+                                    </div>
+                                    <div class="voies-message gap-2">
+                                        <i class="fa-regular fa-image"></i>
+                                        <p class="p-messsage ">صورة</p>
+                                    </div>
+                                </li>
+                                <a href=""> كافة الرسائل</a>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="message-bell position-relative" id="messsages-bell">
+                            <a href="#" class="position-relative bell">
+                                <i class=" fa-regular fa-bell"></i>
+                            </a>
+                            <ul class="ul-bell position-absolute bg-white text-center " id="ul-bell">
+                                <div class="message-header">
+                                    <h3>أحدث الإشعارات</h3>
+                                </div>
+                                <li>
+                                       
+                                    <div class="d-flex m-r-10 align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/teacher/tech-2.jpg" alt="">
+                                            <h4> ياسر العمر</h4>
+                                        </div>
+                                        <P>12:9م</P>
+                                    </div>
+                                    <div class="m-r-10 text-center m-r-10">
+                                        انضم الى المجموعة التي ......
+                                    </div>
+                                   
+                                <li>
+                                       
+                                    <div class="d-flex m-r-10 align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/teacher/tech5.jpg" alt="">
+                                            <h4> زينة كحلاوي</h4>
+                                        </div>
+                                        <P>12:9م</P>
+                                    </div>
+                                    <div class="m-r-10 text-center m-r-10">
+                                        قامت بإرسال 10 صور ......
+                                    </div>
+                               
+                                </li>
+                                <li>
+                                       
+                                    <div class="d-flex m-r-10 align-items-center justify-content-between">
+                                        <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                            <img src="assets/imgs/img.jpg" alt="">
+                                            <h4> شهد مرة</h4>
+                                        </div>
+                                        <P>أمس</P>
+                                    </div>
+                                    <div class="m-r-10 text-center">
+                                        لقد دعتك للانضمام الى......
+                                    </div>
+                               
+                                </li>
+                                    <li>
+                                       
+                                        <div class="d-flex m-r-10 align-items-center justify-content-between">
+                                            <div class=" d-flex gap-3 align-items-center item-menu-left">
+                                                <img src="assets/imgs/teacher/tech1.jpg" alt="">
+                                                <h4> رهف الاشقر</h4>
+                                            </div>
+                                            <P>أمس</P>
+                                        </div>
+                                        <div class="m-r-10 text-center ">
+                                            تمت الموافقة على الطلب.....
+                                        </div>
+                                   
+                                    </li>
+                              <div class="my-2">    
+                                  <a href=""> كافة الرسائل</a>
+                                </div>
+                                </ul>
+
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="avatar">
+                        <img src="assets/imgs/avatar.jpg " alt="avatar">
+                    </div>
+
+                    <a data-bs-toggle="offcanvas" href="#usres-online"> <i
+                            class=" fa-solid fa-bars-staggered active-users"></i></a>
+                </div>
+            </header>
+        </nav>
+        <!-- end header -->
+        <!-- start sidebar القسم اليميني  الاسودالطويل  -->
+        <div class="sidebar" id="sidebar">
+            <div class="profile">
+                <img src="assets/imgs/avatar.jpg" alt="profile">
+                <h3>مايا بيطار </h3>
+            </div>
+            <ul class="ul-sidebar">
+                <li class="mb-2 active">
+                    <i class="fa-solid fa-house-user fs-5 "></i>
+                    <a href="index.html" class="m-r-10"> الصفحة الرئسية</a>
+
+                </li>
+                <li class="mb-2 actives">
+                    <i class="fa-solid fa-circle-user fs-5 "></i>
+                    <a href="profile.html" class="m-r-10"> الحساب</a>
+
+                </li>
+                <li class="mb-2">
+
+                    <i class="fa-solid fa-chalkboard  fs-5 "></i>
+                    <a href="" class="m-r-10"> الإدارة</a>
+
+                </li>
+
+                <li class="mb-2">
+
+                    <i class="fa-solid fa-users fs-5 "></i>
+                    <a href="teachers.html" class="m-r-10"> المعلمون</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-user-graduate fs-5"></i>
+
+                    <a href="students.html" class="m-r-10"> الطلاب </a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-warehouse fs-5 "></i>
+                    <a href="" class="m-r-10"> المكتبة</a>
+
+                </li>
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-book-open-reader fs-5 "></i>
+                    <a href="" class="m-r-10"> المواد</a>
+
+                </li>
+                <li class="mb-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <a href="blog.html" class="m-r-10"> أعمال الطلاب</a>
+
+                </li>
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-gear fs-5 "></i>
+                    <a href="" class="m-r-10"> الأعدادات</a>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- end sidebar -->
+
+        <!-- start content محتوى الصفحة الكبيرة  -->
+        <div class="content p-1" id="content">
+            <div class="inner-content p-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9 card p-3">
+                            <div class="row">
+                                <div class="col mb-3 p-r-0">
+                                    <div class="d-flex justify-content-between ">
+
+                                        <div class="mx-5 my-5 d-grid col-4">
+
+                                            <a class="btn btn-primary " role="button" href="#delet-students"
+                                                data-bs-toggle="modal">حذف الصورة</a>
+
+                                        </div>
+
+                                        <div class="img-prof d-flex gap-2">
+                                            <div class="mt-5">
+                                                <p>مايا بيطار</p>
+                                                <a href="#"> تغيير الصورة </a>
+                                            </div>
+                                            <img class="img-" width="40" src="assets/imgs/avatar.jpg" alt="">
+                                          
+
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                                <div class="row p-3">
+                                    <form action="">
+                                        <div class="row ">
+                                            <div class="col mb-3">
+                                                <label class="form-label"> الاسم الأول:</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="مايا ">
+
+                                            </div>
+                                            <div class="col mb-3">
+                                                <label class="form-label">اسم العائلة:</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder=" بيطار">
+
+                                            </div>
+                                        </div>
+                                      <div class="row">
+                                          
+                                              <div class="col mb-3">
+                                                  <label  class="form-label">البريد الالكتروني:</label>
+                                                  <input type="email" class="form-control"placeholder=" maya@gamil.com"  >
+                                               
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label  class="form-label">رقم الهاتف :</label>
+                                                    <input type="text" class="form-control" placeholder="432103218837+" >
+                                                 
+                                                  </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col mb-3">
+                                                    <label  class="form-label">كلمة السر  :</label>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <span class="input-group-text" id="inputGroup-sizing-sm">
+                                                            <i class="fa-solid fa-eye-slash"></i>
+                                                          
+                                                         
+                                                        </span>
+                                                        <input type="text" class="form-control" id="inputGroup-sizing-lg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="*******************">
+                                                      </div>
+                                                 
+                                                  </div>
+                                              </div>
+                                            <h4 class="h3-table my-4">العنوان الكامل </h4>
+                                            <div class="row">
+                                          
+                                                <div class="col mb-3">
+                                                    <label  class="form-label">الدولة:</label>
+                                                    <input type="text" class="form-control"placeholder=" سوريا"  >
+                                                 
+                                                  </div>
+                                                  <div class="col mb-3">
+                                                      <label  class="form-label">المدينة:</label>
+                                                      <input type="text" class="form-control" placeholder="إدلب" >
+                                                   
+                                                    </div>
+                                              </div>
+                                              <div class="row">
+                                          
+                                                <div class="col mb-3">
+                                                    <label  class="form-label">العنوان :</label>
+                                                    <input type="text" class="form-control"placeholder=" شرق دوار الساعة"  >
+                                                 
+                                                  </div>
+                                                  <div class="col mb-3">
+                                                      <label  class="form-label">الرمز البريدي:</label>
+                                                      <input type="text" class="form-control" placeholder="981250" >
+                                                   
+                                                    </div>
+                                              </div>
+                                           
+
+                                              <h4 class="h3-table my-4">اللغة والشهادات</h4>
+
+                                              <div class="row">
+                                          
+                                                <div class="col mb-3">
+                                                    <label  class="form-label">اللغة :</label>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <span class="input-group-text" id="inputGroup-sizing-sm">
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                            <i class="fa-solid fa-chevron-left"></i>
+                                                         
+                                                        </span>
+                                                        <input type="text" class="form-control" id="inputGroup-sizing-default" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="الإنجليزية">
+                                                      </div>
+                                                 
+                                                  </div>
+
+                                                  <div class="col mb-3">
+                                                    <label  class="form-label">الشهادات :</label>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <span class="input-group-text" id="inputGroup-sizing-sm">
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                            <i class="fa-solid fa-chevron-left"></i>
+                                                         
+                                                        </span>
+                                                        <input type="text" class="form-control" id="inputGroup-sizing-default" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="شهادة أمن سيبراني">
+                                                      </div>
+                                                 
+                                                  </div>
+                                              </div>
+
+                                              <div class="d-flex gap-2 mb-4">
+                                                <button class="btn btn-success" id="inputGroup-sizing-sm">حفظ التغيرات </button>
+                                                <button class="btn btn-danger" id="inputGroup-sizing-sm">إلغاء</button>
+                                            </div>
+                                    </form>
+                                
+                            </div>
+                           
+
+                        </div>
+
+
+
+
+
+                        <!-- يسار -->
+                        <div class="col-md-3 p-l-0 ">
+                            <!-- <div class="card prof-hover">
+                             
+                                        <li class="prof-div">
+                                            <p class="p-messsage ">البريد الالكتروني</p>
+                                            <div class="voies-message d-flex gap-3 mt-2">
+    
+                                                <i class="fa-regular fa-copy i-mesag"></i>
+                                                <p class="p-messsage ">maya@gamil.com</p>
+    
+                                            </div>
+                                        </li>
+                                        <li class="prof-div">
+                                            <p class="p-messsage ">رقم الهاتف</p>
+                                            <div class="voies-message d-flex gap-3 mt-2">
+    
+                                                <i class="fa-regular fa-copy i-mesag"></i>
+                                                <p class="p-messsage ">325789548697+</p>
+    
+                                            </div>
+                                        </li>
+                                        <li class="prof-div">
+                                            <p class="p-messsage ">الروابط</p>  
+                                            <div class="voies-message d-flex gap-3 mt-2">
+                                                <a href="" class="fs-6">إضافة روابط</a>
+    
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+
+                            </div> -->
+                            <div class="profile card left-prof">
+                                <ul class="ul-prof">
+
+
+                                    <li class="mb-2 active2">
+                                        <i class="fa-solid fa-pen fs-5 i-icon text-center"></i>
+                                        <a href="#" class="m-r-10 text-black  "> تعديل الملف الشخصي</a>
+
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <i class="fa-solid  fa-envelope text-black fs-5 i-icon"></i>
+                                        <a href="#" class="m-r-10 text-black i-a"> البريد الإلكتروني</a>
+
+                                    </li>
+                                    <li class="mb-2">
+
+                                        <i class="fa-solid fa-key  fs-5 i-icon text-black"></i>
+                                        <a href="#" class="m-r-10 text-black i-a"> مفاتيح المرور</a>
+
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fa-solid fa-bell fs-5 i-icon text-black"></i>
+                                        <a href="#" class="m-r-10 text-black i-a"> الإشعارات</a>
+
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fa-solid fa-trash fs-5 i-icon text-black"></i>
+                                        <a href="#" class="m-r-10 text-black i-a"> حذف الحساب</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <!-- end content -->
+    </div>
+
+
+
+
+
+
+
+
+    <!-- start offcanves -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="usres-online" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">المستخدمين المتصلين</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="alert alert-success">
+                كافة المستخدمين النشطين
+            </div>
+            <div class="items-side-menu d-flex justify-content-between align-items-center mb-3">
+                <div class="avatar-info d-flex align-items-center position-relative">
+                    <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                    <h4>سارة الاحمد</h4>
+                </div>
+
+
+                <div class="contact-info">
+                    <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                    <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+                </div>
+            </div>
+            <div class="items-side-menu d-flex justify-content-between align-items-center mb-3">
+                <div class="avatar-info d-flex align-items-center position-relative">
+                    <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                    <h4>اريج عبدلله</h4>
+                </div>
+
+
+                <div class="contact-info">
+                    <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                    <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+                </div>
+            </div>
+            <div class="items-side-menu d-flex justify-content-between align-items-center mb-3">
+                <div class="avatar-info d-flex align-items-center position-relative">
+                    <div style="width: 10px ; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <img src="assets/imgs/avatar.jpg" width="40" class="" alt="">
+                    <h4>يامن العلي </h4>
+                </div>
+
+
+                <div class="contact-info">
+                    <i class=" fa-brands fa-square-whatsapp  whatsapp-icons"></i>
+                    <i class="fa-brands fa-facebook-messenger  messenger-icons"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end offcanves -->
+
+
+
+
+    <!--  start modal عند النقر ع حذف -->
+
+    <div class="modal fade" id="delet-students" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">حذف الصورة الشخصية </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="">
+                        <div class="alert alert-danger"> هل انت متأكد من عملية الحذف ؟</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">أغلاق</button>
+                            <button type="button" class="btn btn-primary">حذف</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- end modal -->
+
+
+        <script src="assets/js/bootstrao.js"></script>
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
